@@ -150,7 +150,7 @@ p {
   height: 6.5rem;
 }
 
-.intro-content {
+.home-content {
   position: relative;
   top: -8rem;
   display: grid;
@@ -159,15 +159,15 @@ p {
   min-height: 100vh;
 }
 
-.intro-text-content,
-.intro-img {
+.home-text-content,
+.home-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
 
-.intro-img img,
-.intro-img svg {
+.home-img img,
+.home-img svg {
   max-width: 100%;
   height: auto;
 }
@@ -221,4 +221,19 @@ p {
 
 .grid-description {
   padding-bottom: 5rem;
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
